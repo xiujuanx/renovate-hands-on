@@ -5,7 +5,7 @@ go 1.19
 replace sigs.k8s.io/controller-runtime => sigs.k8s.io/controller-runtime v0.14.5
 
 require (
-	github.com/vmware-tanzu/tanzu-framework/apis/run v0.0.0-20230428192643-b25b198b0418
+	github.com/vmware-tanzu/tanzu-framework/apis/run 93a508a39d94
 	k8s.io/api v0.28.0
 	sigs.k8s.io/cluster-api v1.5.1
 )
