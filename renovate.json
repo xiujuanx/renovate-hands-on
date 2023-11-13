@@ -1,4 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "enabled": false,
+      "description": "Disable Renovate for all dependencies"
+    },
+    {
+      "matchPackageNames": ["sigs.k8s.io/cluster-api"],
+      "enabled": true,
+      "description": "Only enable Renovate for cluster-api dependency"
+    },
+    {
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false,
+      "description": "Disable major and minor update"
+    }
+  ],
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths", "gomodMassage"]
 }

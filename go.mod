@@ -2,18 +2,17 @@ module hello
 
 go 1.19
 
-replace sigs.k8s.io/controller-runtime => sigs.k8s.io/controller-runtime v0.14.5
+replace sigs.k8s.io/cluster-api => sigs.k8s.io/cluster-api v1.4.2
 
 require (
 	github.com/vmware-tanzu/tanzu-framework/apis/run v0.0.0-20230428192643-b25b198b0418
 	k8s.io/api v0.28.0
-	sigs.k8s.io/cluster-api v1.5.1
+	sigs.k8s.io/cluster-api v1.4.2
 )
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
-	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
